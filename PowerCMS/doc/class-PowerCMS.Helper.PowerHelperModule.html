@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PowerCMS\Helper\PowerHelperModule</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PowerCMS.html">
+						PowerCMS<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-PowerCMS.Helper.html">
+						Helper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PowerCMS.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PowerCMS.Helper.PowerHelperApi.html">PowerHelperApi</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperApplication.html">PowerHelperApplication</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperConnectionDatabase.html">PowerHelperConnectionDatabase</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperDatabase.html">PowerHelperDatabase</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperDataType.html">PowerHelperDataType</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperFile.html">PowerHelperFile</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperImage.html">PowerHelperImage</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperInput.html">PowerHelperInput</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperMedia.html">PowerHelperMedia</a></li>
+				<li class="active"><a href="class-PowerCMS.Helper.PowerHelperModule.html">PowerHelperModule</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperModuleResult.html">PowerHelperModuleResult</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperPagination.html">PowerHelperPagination</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperPaginationPages.html">PowerHelperPaginationPages</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperResponse.html">PowerHelperResponse</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperTemplate.html">PowerHelperTemplate</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperView.html">PowerHelperView</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperViewTools.html">PowerHelperViewTools</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PowerCMS.Helper.html" title="Summary of PowerCMS\Helper"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PowerHelperModule</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PowerCMS.html">PowerCMS</a>\<a href="namespace-PowerCMS.Helper.html">Helper</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-PowerCMS.Helper.PowerHelperModule.html#5-478" title="Go to source code">PowerHelperModule.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperModule.html#11-35" title="Go to source code">__construct</a>( <span>string <var>$module</var></span> )</code>
+
+		<div class="description short">
+			<p>Acessa o módulo do PowerCMS</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Acessa o módulo do PowerCMS</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData();
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+        <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         Name3</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$module</var></dt>
+					<dd>nome do módulo</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getData" id="_getData">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-PowerCMS.Helper.PowerHelperModuleResult.html">PowerCMS\Helper\PowerHelperModuleResult</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getData">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperModule.html#37-357" title="Go to source code">getData</a>( )</code>
+
+		<div class="description short">
+			<p>Retorna os registros contidos no Banco de Dados referente ao módulo</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna os registros contidos no Banco de Dados referente ao módulo</p>
+
+<h1>Ex 1</h1>
+
+<h2>Retornando todos os registros:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;all();
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+        <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         Name3</span></pre>
+
+<h1>Ex 2</h1>
+
+<h2>Retornando uma lista de registros por ID:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;byIds(<span class="php-keyword1">array</span>(<span class="php-num">1</span>, <span class="php-num">2</span>, <span class="php-num">3</span>));
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+     <span class="php-comment">##Retorno: Name1</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         Name3</span></pre>
+
+<h1>Ex 3</h1>
+
+<h2>Atualizando os dados do registro no banco dados:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;byId(<span class="php-num">1</span>);
+     <span class="php-keyword1">echo</span> <span class="php-var">$data</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     <span class="php-var">$data</span>-&gt;setName(<span class="php-quote">&quot;Teste3&quot;</span>);
+     <span class="php-var">$data</span>-&gt;update();
+     <span class="php-keyword1">echo</span> <span class="php-var">$module</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+
+     <span class="php-comment">##Retorno: Teste</span>
+     <span class="php-comment">##         Teste3</span></pre>
+
+<h1>Ex 4</h1>
+
+<h2>Removendo o registro:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;byId(<span class="php-num">1</span>);
+
+     <span class="php-comment">## Move o arquivo para a Lixeira</span>
+     <span class="php-var">$data</span>-&gt;remove();
+
+     <span class="php-comment">## Removendo completamente o registro</span>
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;byId(<span class="php-num">2</span>);
+     <span class="php-var">$data</span>-&gt;remove(<span class="php-keyword1">true</span>);</pre>
+
+<h1>Ex 5</h1>
+
+<h2>Exibindo apenas os registros rascunho:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;onlyDraft();
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+        <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         Name3</span></pre>
+
+<h1>Ex 6</h1>
+
+<h2>Obtendo o registro por ID:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;byId(<span class="php-num">1</span>);
+     <span class="php-keyword1">if</span>(<span class="php-var">$data</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$data</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$data</span>-&gt;getLastName();
+     } <span class="php-keyword1">else</span> {
+         <span class="php-keyword1">echo</span> <span class="php-quote">&quot;Sem registro&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name LastName</span>
+         <span class="php-comment">##Caso não possua registros o retorno será Sem registro</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;byId(<span class="php-num">1</span>, <span class="php-keyword1">true</span>);
+     <span class="php-keyword1">if</span>(<span class="php-var">$data</span>) {
+         <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+             <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+         }
+     } <span class="php-keyword1">else</span> {
+         <span class="php-keyword1">echo</span> <span class="php-quote">&quot;Sem registro&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1</span>
+         <span class="php-comment">##Caso não possua registros o retorno será Sem registro</span></pre>
+
+<h1>Ex 7</h1>
+
+<h2>Agrupando os registros:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData();
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1</span>
+     <span class="php-comment">##         Name1</span>
+     <span class="php-comment">##         Name1</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         Name3</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;group(<span class="php-quote">&quot;name&quot;</span>);
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         Name3</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;group(<span class="php-quote">&quot;name&quot;</span>)-&gt;order(<span class="php-quote">&quot;name DESC&quot;</span>);
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name3</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         Name1</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;group(<span class="php-quote">&quot;name&quot;</span>, <span class="php-quote">&quot;name = 'Name3'&quot;</span>)-&gt;order(<span class="php-quote">&quot;name DESC&quot;</span>);
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name3</span></pre>
+
+<h1>Ex 8</h1>
+
+<h2>Limitnado o numero de registros:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData();
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getLastName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1 LastName1</span>
+     <span class="php-comment">##         Name2 LastName2</span>
+     <span class="php-comment">##         Name3 LastName3</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;limit(<span class="php-num">2</span>);
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getLastName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1 LastName1</span>
+     <span class="php-comment">##         Name2 LastName2</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;limit(<span class="php-num">2</span>, <span class="php-num">1</span>);
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getLastName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name2 LastName2</span>
+     <span class="php-comment">##         Name3 LastName3</span></pre>
+
+<h1>Ex 9</h1>
+
+<h2>Ordenando os registros:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData();
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getLastName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name2 LastName2</span>
+     <span class="php-comment">##         Name3 LastName3</span>
+     <span class="php-comment">##         Name1 LastName1</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;order(<span class="php-quote">&quot;name DESC&quot;</span>);
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getLastName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name3 LastName3</span>
+     <span class="php-comment">##         Name2 LastName2</span>
+     <span class="php-comment">##         Name1 LastName1</span></pre>
+
+<h1>Ex 10</h1>
+
+<h2>Retornando os registros de acordo com condição(ões):</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;byId(<span class="php-num">2</span>);
+     <span class="php-keyword1">echo</span> <span class="php-var">$data</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$data</span>-&gt;getLastName();
+
+     <span class="php-comment">##Retorno: Name LastName</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData();
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getLastName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name LastName</span>
+     <span class="php-comment">##         Name LastName</span>
+     <span class="php-comment">##         Name LastName</span>
+     <span class="php-comment">##         Name LastName...</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;where(<span class="php-quote">&quot;id = ?&quot;</span>, <span class="php-num">2</span>)
+                                 -&gt;where(<span class="php-quote">&quot;id = ?&quot;</span>, <span class="php-num">3</span>, <span class="php-quote">&quot;OR&quot;</span>);
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getLastName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name LastName</span>
+
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;where(<span class="php-quote">&quot;id IN(?, ?, ?)&quot;</span>, <span class="php-keyword1">array</span>(<span class="php-num">1</span>, <span class="php-num">2</span>, <span class="php-num">3</span>));
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getLastName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name LastName</span>
+     <span class="php-comment">##         Name LastName</span>
+     <span class="php-comment">##         Name LastName</span></pre>
+
+<h1>Ex 11</h1>
+
+<h2>Retorna os registros sem o ID informado:</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;notIds(<span class="php-keyword1">array</span>(<span class="php-num">1</span>, <span class="php-num">2</span>, <span class="php-num">3</span>));
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name4</span>
+     <span class="php-comment">##         Name5</span>
+     <span class="php-comment">##         Name6</span></pre>
+
+<h1>Ex 12:</h1>
+
+<h2>Retorna os registros sem o ID informado</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()-&gt;notId(<span class="php-num">2</span>);
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Name1</span>
+     <span class="php-comment">##         Name3</span></pre>
+
+<h1>Ex 13</h1>
+
+<h2>Retorna os registros de acordo com a condição e field informado</h2>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>   = <span class="php-var">$module</span>-&gt;getData()
+                      -&gt;byField(<span class="php-quote">&quot;field_name&quot;</span>, <span class="php-quote">&quot;value&quot;</span>)
+                      -&gt;byField(<span class="php-quote">&quot;field_name2&quot;</span>, <span class="php-quote">&quot;value2&quot;</span>, <span class="php-quote">&quot;&lt;&gt;&quot;</span>);
+                      -&gt;byField(<span class="php-quote">&quot;field_name3&quot;</span>, <span class="php-keyword1">array</span>(<span class="php-num">1</span>, <span class="php-num">2</span>, <span class="php-num">3</span>, <span class="php-num">4</span>), <span class="php-quote">&quot;NOT IN&quot;</span>, <span class="php-quote">&quot;OR&quot;</span>);
+     <span class="php-comment">##Equivalente:</span>
+     <span class="php-comment">##$module-&gt;getData()</span>
+     <span class="php-comment">##       -&gt;where(&quot;field_name = ? AND field_name2 &lt;&gt; ? &quot;, array(&quot;teste&quot;, 2))</span>
+     <span class="php-comment">##       -&gt;where(&quot;field_name3 NOT IN(?, ?, ?, ?)&quot;, array(1, 2, 3, 4), &quot;OR&quot;);</span>
+
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot; &quot;</span> . <span class="php-var">$row</span>-&gt;getId() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+
+     <span class="php-comment">##Retorno: Values 4</span>
+     <span class="php-comment">##         Values 3</span></pre>
+
+<h1>Ex 14:</h1>
+
+<h2>Páginação dos registros</h2>
+
+<pre><span class="php-var">$module</span>     = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$data</span>       = <span class="php-var">$module</span>-&gt;getData()-&gt;byIds(<span class="php-keyword1">array</span>(<span class="php-num">1</span>, <span class="php-num">2</span>, <span class="php-num">3</span>, <span class="php-num">4</span>, <span class="php-num">5</span>))-&gt;setPagination(<span class="php-num">0</span>, <span class="php-num">2</span>);
+     <span class="php-var">$pagination</span> = <span class="php-var">$data</span>-&gt;getPagination();
+
+     <span class="php-comment">## Setando os parametros</span>
+     <span class="php-comment">#$pagination = $data-&gt;getPagination()</span>
+     <span class="php-comment">#                   -&gt;setsetNextShowAlways(true)</span>
+     <span class="php-comment">#                   -&gt;setPreviousShowAlways(true)</span>
+     <span class="php-comment">#                   -&gt;setLabelNext(&quot;Próxima&quot;)</span>
+     <span class="php-comment">#                   -&gt;setLabelPrevious(&quot;Anterior&quot;);</span>
+
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-var">$row</span>-&gt;getName() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+     <span class="php-keyword1">echo</span> <span class="php-quote">&quot;::Páginas:&quot;</span> . <span class="php-quote">&quot;\r\n&quot;</span>;
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$pagination</span> <span class="php-keyword1">as</span> <span class="php-var">$p</span>) {
+         <span class="php-keyword1">echo</span> <span class="php-quote">&quot;Index: &quot;</span> . <span class="php-var">$p</span>-&gt;getIndex() . <span class="php-quote">&quot;, Label: &quot;</span> . <span class="php-var">$p</span>-&gt;getLabel() . <span class="php-quote">&quot;\r\n&quot;</span>;
+     }
+     <span class="php-comment">##Retorno: Name1</span>
+     <span class="php-comment">##         Name2</span>
+     <span class="php-comment">##         ::Páginas:</span>
+     <span class="php-comment">##         Index: 0, Label: Anterior ##Caso a opção setPreviousShowAlways = false, só aparecequando realmente tiver uma página anterior, ou seja, a partir da 2º página</span>
+     <span class="php-comment">##         Index: 0, Label: 1</span>
+     <span class="php-comment">##         Index: 1, Label: 2</span>
+     <span class="php-comment">##         Index: 2, Label: 3</span>
+     <span class="php-comment">##         Index: 1, Label: Próxima ##Caso a opção setsetNextShowAlways = false, só aparecequando realmente tiver uma próxima página, ou seja, até a peníltima página</span></pre>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-PowerCMS.Helper.PowerHelperModuleResult.html">PowerCMS\Helper\PowerHelperModuleResult</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_id" id="_insert_id">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_id">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperModule.html#359-378" title="Go to source code">insert_id</a>( )</code>
+
+		<div class="description short">
+			<p>Retorna o último ID inserido</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna o último ID inserido</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$module</span>-&gt;insert(<span class="php-keyword1">array</span>(
+         <span class="php-quote">&quot;name&quot;</span> =&gt; <span class="php-quote">&quot;Teste3&quot;</span>
+     ));
+     <span class="php-keyword1">echo</span> <span class="php-var">$module</span>-&gt;insert_id();
+
+     <span class="php-comment">##Retorno:</span>
+     <span class="php-comment">##  2</span></pre>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			 public 
+
+			PowerModelRow|Int
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperModule.html#380-396" title="Go to source code">insert</a>( <span>array <var>$data</var></span>, <span>boolean <var>$return_record</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Insere um novo registro no banco de dados</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Insere um novo registro no banco de dados</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$module</span>-&gt;insert(<span class="php-keyword1">array</span>(
+         <span class="php-quote">&quot;name&quot;</span> =&gt; <span class="php-quote">&quot;Teste3&quot;</span>
+     ));</pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$return_record</var></dt>
+					<dd>true retorna o registro do banco inserido, e false o numero de id, valor padrão false</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					PowerModelRow|Int
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+
+			PowerModelRow|Int
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperModule.html#398-414" title="Go to source code">update</a>( <span>array <var>$data</var></span>, <span>boolean <var>$return_record</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>Atualiza todos os registros</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Atualiza todos os registros</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-var">$module</span>-&gt;update(<span class="php-keyword1">array</span>(
+         <span class="php-quote">&quot;name&quot;</span> =&gt; <span class="php-quote">&quot;Teste3&quot;</span>
+     ));</pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$return_record</var>,…</dt>
+					<dd>true retorna o registro do banco inserido, e false o numero de id, valor padrão false</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					PowerModelRow|Int
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="inserts" id="_inserts">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_inserts">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperModule.html#416-454" title="Go to source code">inserts</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Insere novos registros no banco de dados</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Insere novos registros no banco de dados</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$module</span> = <span class="php-keyword1">new</span> PowerHelperModule(<span class="php-quote">&quot;name_module&quot;</span>);
+     <span class="php-keyword1">echo</span> <span class="php-var">$module</span>-&gt;inserts(<span class="php-keyword1">array</span>(
+         <span class="php-quote">&quot;name&quot;</span> =&gt; <span class="php-quote">&quot;Teste3&quot;</span>
+     ),
+     <span class="php-keyword1">array</span>(
+         <span class="php-quote">&quot;name&quot;</span> =&gt; <span class="php-quote">&quot;Teste3&quot;</span>
+     ),
+     <span class="php-keyword1">array</span>(
+         <span class="php-quote">&quot;name&quot;</span> =&gt; <span class="php-quote">&quot;Teste3&quot;</span>
+     ));
+     <span class="php-keyword1">echo</span> <span class="php-quote">&quot;Registros Inseridos\r\n&quot;</span>;
+     <span class="php-keyword1">echo</span> <span class="php-var">$module</span>-&gt;inserts(<span class="php-keyword1">array</span>(
+         <span class="php-keyword1">array</span>(
+             <span class="php-quote">&quot;name&quot;</span> =&gt; <span class="php-quote">&quot;Teste3&quot;</span>
+         ),
+         <span class="php-keyword1">array</span>(
+             <span class="php-quote">&quot;name&quot;</span> =&gt; <span class="php-quote">&quot;Teste3&quot;</span>
+         )
+     ));
+     <span class="php-keyword1">echo</span> <span class="php-quote">&quot;Registros Inseridos&quot;</span>;
+
+     <span class="php-comment">##Retorno:</span>
+     <span class="php-comment">##  3 Registros Inseridos</span>
+     <span class="php-comment">##  2 Registros Inseridos</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConfigModule" id="_getConfigModule">
+
+		<td class="attributes"><code>
+			 public static
+
+			Array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConfigModule">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperModule.html#456-476" title="Go to source code">getConfigModule</a>( <span>string <var>$module</var></span> )</code>
+
+		<div class="description short">
+			<p>Retorna as configurações do módulo</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna as configurações do módulo</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$module</var></dt>
+					<dd>Nome do Módulo</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

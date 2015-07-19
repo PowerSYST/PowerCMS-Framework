@@ -1,0 +1,23 @@
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI}      ^.+\.(jpg|bmp|png|jpeg|gif)$ [NC]
+RewriteCond %{QUERY_STRING}     ^.*w=([0-9]+).*$ [NC]
+RewriteRule ^(.*)$              ./index.php?powercms_image=$1&%{QUERY_STRING} [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI}      !^/?(Public|public)?/?powercms/(.*+)?$ [NC]
+RewriteCond %{REQUEST_URI}      !^.*\.min\.(js|css|html|htm)$ [NC]
+RewriteRule ^(.*)$              ./index.php?powercms_route_app=$1&%{QUERY_STRING} [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI}      ^.*\.min\.(js|css|html|htm)$
+RewriteRule ^(.*)$              ./index.php?powercms_minify=$1&%{QUERY_STRING} [QSA,L]
+
+RewriteCond %{REQUEST_URI}      ^/?(Public|public)?/?powercms/(.*+)?$ [NC]
+RewriteRule ^(.*)$              ./index.php?powercms_route=$1&%{QUERY_STRING} [QSA,L]

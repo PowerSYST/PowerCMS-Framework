@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PowerCMS\Helper\PowerHelperImage</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PowerCMS.html">
+						PowerCMS<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-PowerCMS.Helper.html">
+						Helper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PowerCMS.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PowerCMS.Helper.PowerHelperApi.html">PowerHelperApi</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperApplication.html">PowerHelperApplication</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperConnectionDatabase.html">PowerHelperConnectionDatabase</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperDatabase.html">PowerHelperDatabase</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperDataType.html">PowerHelperDataType</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperFile.html">PowerHelperFile</a></li>
+				<li class="active"><a href="class-PowerCMS.Helper.PowerHelperImage.html">PowerHelperImage</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperInput.html">PowerHelperInput</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperMedia.html">PowerHelperMedia</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperModule.html">PowerHelperModule</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperModuleResult.html">PowerHelperModuleResult</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperPagination.html">PowerHelperPagination</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperPaginationPages.html">PowerHelperPaginationPages</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperResponse.html">PowerHelperResponse</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperTemplate.html">PowerHelperTemplate</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperView.html">PowerHelperView</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperViewTools.html">PowerHelperViewTools</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PowerCMS.Helper.html" title="Summary of PowerCMS\Helper"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PowerHelperImage</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PowerCMS.html">PowerCMS</a>\<a href="namespace-PowerCMS.Helper.html">Helper</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-PowerCMS.Helper.PowerHelperImage.html#9-255" title="Go to source code">PowerHelperImage.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#20-30" title="Go to source code">__construct</a>( <span> <var>$file</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resize" id="_resize">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-PowerCMS.Helper.PowerHelperImage.html">PowerCMS\Helper\PowerHelperImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resize">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#32-56" title="Go to source code">resize</a>( <span>type <var>$width</var></span>, <span>type <var>$height</var></span>, <span>type <var>$type</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Retorna o valor contido na variável global $_POST</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna o valor contido na variável global $_POST</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$image</span> = <span class="php-keyword1">new</span> PowerHelperImage(<span class="php-quote">&quot;file.jpg&quot;</span>);
+  <span class="php-var">$image</span>-&gt;resize(<span class="php-num">100</span>, <span class="php-num">100</span>, PowerHelperImage::OPT_FILL);
+  <span class="php-var">$image</span>-&gt;resize(<span class="php-num">100</span>, <span class="php-num">100</span>, PowerHelperImage::OPT_CROP);
+  <span class="php-var">$image</span>-&gt;resize(<span class="php-num">100</span>, <span class="php-num">100</span>, PowerHelperImage::OPT_EMPTY);
+
+ <span class="php-comment">##Retorna 1 - Imagem file.jpg no tamano 100x100px preenchida e centralizada</span>
+ <span class="php-comment">##        2 - Imagem file.jpg no tamano 100x100px preenchida cortada e centralizada</span>
+ <span class="php-comment">##        3 - Imagem file.jpg no tamano 100x100px preenchida e centralizada e sem preenchimento</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd></dd>
+					<dt><var>$height</var></dt>
+					<dd></dd>
+					<dt><var>$type</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-PowerCMS.Helper.PowerHelperImage.html">PowerCMS\Helper\PowerHelperImage</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isImae" id="_isImae">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isImae">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#58-79" title="Go to source code">isImae</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Verifica se é uma imagem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Verifica se é uma imagem</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-keyword1">if</span>(PowerHelperImage::isImage(<span class="php-quote">&quot;file.jpg&quot;</span>)) {
+      <span class="php-keyword1">echo</span> <span class="php-quote">&quot;é uma imagem&quot;</span>;
+  }
+  <span class="php-keyword1">if</span>(!PowerHelperImage::isImage(<span class="php-quote">&quot;file.jpg&quot;</span>)) {
+      <span class="php-keyword1">echo</span> <span class="php-quote">&quot;não é uma imagem&quot;</span>;
+  }
+
+
+ <span class="php-comment">##Retorna é uma imagem</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="flip" id="_flip">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_flip">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#81-97" title="Go to source code">flip</a>( <span>string <var>$type</var> = <span class="php-quote">'h'</span></span> )</code>
+
+		<div class="description short">
+			<p>Retorna o valor contido na variável global $_POST</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna o valor contido na variável global $_POST</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$image</span> = <span class="php-keyword1">new</span> PowerHelperImage(<span class="php-quote">&quot;file.jpg&quot;</span>);
+  <span class="php-var">$image</span>-&gt;flip(<span class="php-quote">'h'</span>); <span class="php-comment">## Faz um flip na horizontal</span>
+  <span class="php-var">$image</span>-&gt;flip(<span class="php-quote">'v'</span>); <span class="php-comment">## Faz um flip na vertical</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rotate" id="_rotate">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rotate">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#99-114" title="Go to source code">rotate</a>( <span>integer <var>$graus</var></span> )</code>
+
+		<div class="description short">
+			<p>Retorna o valor contido na variável global $_POST</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna o valor contido na variável global $_POST</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$image</span> = <span class="php-keyword1">new</span> PowerHelperImage(<span class="php-quote">&quot;file.jpg&quot;</span>);
+  <span class="php-var">$image</span>-&gt;rotate(<span class="php-num">90</span>); <span class="php-comment">## Rotaciona a imagem em 90º</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$graus</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="legend" id="_legend">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_legend">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#116-134" title="Go to source code">legend</a>( <span>string <var>$txt</var></span>, <span>integer <var>$size</var> = <span class="php-num">5</span></span>, <span>integer <var>$x</var> = <span class="php-num">0</span></span>, <span>integer <var>$y</var> = <span class="php-num">0</span></span>, <span>string <var>$background_color</var> = <span class="php-quote">''</span></span>, <span>boolean <var>$truetype</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$font</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Adicona uma legenda na imagem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adicona uma legenda na imagem</p>
+
+<p><b>Veja mais:</b>
+http://www.daviferreira.com/posts/canvas-nova-classe-para-manipulacao-e-redimensionamento-de-imagens-com-php</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$txt</var></dt>
+					<dd></dd>
+					<dt><var>$size</var></dt>
+					<dd></dd>
+					<dt><var>$x</var></dt>
+					<dd></dd>
+					<dt><var>$y</var></dt>
+					<dd></dd>
+					<dt><var>$background_color</var></dt>
+					<dd></dd>
+					<dt><var>$truetype</var></dt>
+					<dd></dd>
+					<dt><var>$font</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="mark" id="_mark">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_mark">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#136-151" title="Go to source code">mark</a>( <span>string <var>$image</var></span>, <span>integer <var>$x</var> = <span class="php-num">0</span></span>, <span>integer <var>$y</var> = <span class="php-num">0</span></span>, <span>integer <var>$alpha</var> = <span class="php-num">100</span></span> )</code>
+
+		<div class="description short">
+			<p>Adicona uma marca na imagem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adicona uma marca na imagem</p>
+
+<p><b>Veja mais:</b>
+http://www.daviferreira.com/posts/canvas-nova-classe-para-manipulacao-e-redimensionamento-de-imagens-com-php</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$image</var></dt>
+					<dd></dd>
+					<dt><var>$x</var></dt>
+					<dd></dd>
+					<dt><var>$y</var></dt>
+					<dd></dd>
+					<dt><var>$alpha</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filter" id="_filter">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filter">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#153-170" title="Go to source code">filter</a>( <span>string <var>$filter</var></span>, <span>integer <var>$quant</var> = <span class="php-num">1</span></span>, <span>mixed <var>$arg1</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$arg2</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$arg3</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$arg4</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Adicona uma legenda na imagem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adicona uma legenda na imagem</p>
+
+<p><b>Veja mais:</b>
+http://www.daviferreira.com/posts/canvas-nova-classe-para-manipulacao-e-redimensionamento-de-imagens-com-php</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filter</var></dt>
+					<dd></dd>
+					<dt><var>$quant</var></dt>
+					<dd></dd>
+					<dt><var>$arg1</var></dt>
+					<dd></dd>
+					<dt><var>$arg2</var></dt>
+					<dd></dd>
+					<dt><var>$arg3</var></dt>
+					<dd></dd>
+					<dt><var>$arg4</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="show" id="_show">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_show">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#172-186" title="Go to source code">show</a>( <span>integer <var>$quality</var> = <span class="php-num">100</span></span> )</code>
+
+		<div class="description short">
+			<p>Exibe a imagem com as alterações</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Exibe a imagem com as alterações</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$image</span> = <span class="php-keyword1">new</span> PowerHelperImage(<span class="php-quote">&quot;file.jpg&quot;</span>);
+  <span class="php-var">$image</span>-&gt;flip(<span class="php-quote">'h'</span>); <span class="php-comment">## Faz um flip na horizontal</span>
+  <span class="php-var">$image</span>-&gt;show();</pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$quality</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="save" id="_save">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_save">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#189-203" title="Go to source code">save</a>( <span>string <var>$new_file_image</var></span>, <span>integer <var>$quality</var> = <span class="php-num">100</span></span> )</code>
+
+		<div class="description short">
+			<p>Salva a imagem com as alterações</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Salva a imagem com as alterações</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$image</span> = <span class="php-keyword1">new</span> PowerHelperImage(<span class="php-quote">&quot;file.jpg&quot;</span>);
+  <span class="php-var">$image</span>-&gt;save(<span class="php-quote">'h'</span>); <span class="php-comment">## Faz um flip na horizontal</span>
+  <span class="php-var">$image</span>-&gt;show();</pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$new_file_image</var></dt>
+					<dd>Endereço do novo arquivo</dd>
+					<dt><var>$quality</var></dt>
+					<dd>qualidade da imagem</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUrlImageResize" id="_getUrlImageResize">
+
+		<td class="attributes"><code>
+			 public static
+
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUrlImageResize">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#205-229" title="Go to source code">getUrlImageResize</a>( <span><code><a href="class-PowerCMS.Model.PowerModelMedia.html">PowerCMS\Model\PowerModelMedia</a></code> <var>$media</var></span>, <span>type <var>$w</var></span>, <span>type <var>$h</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Retorna uma url de acesso a imagem redimensionada</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna uma url de acesso a imagem redimensionada</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$media</span> = <span class="php-keyword1">new</span> PowerHelperMedia();
+     <span class="php-var">$data</span>   = <span class="php-var">$media</span>-&gt;byIds(<span class="php-keyword1">array</span>(<span class="php-num">1</span>, <span class="php-num">2</span>, <span class="php-num">3</span>));
+     <span class="php-keyword1">foreach</span>(<span class="php-var">$data</span> <span class="php-keyword1">as</span> <span class="php-var">$row</span>) {
+          <span class="php-keyword1">if</span>(PowerHelperImage::isImage(<span class="php-var">$row</span>-&gt;getUrl())) {
+             <span class="php-keyword1">echo</span> PowerHelperImage::getUrlImageResize(<span class="php-var">$row</span>, <span class="php-num">100</span>, <span class="php-num">0</span>); . <span class="php-quote">&quot;\r\n&quot;</span>;
+          }
+     }
+
+     <span class="php-comment">##Retorno: http://...com/.../image1.jpg?w=100&amp;h=0</span>
+     <span class="php-comment">##         http://...com/.../image3.jpg?w=100&amp;h=0</span>
+     <span class="php-comment">##         ** Considerando que o arquivo do id 2 não seja imagem</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$media</var></dt>
+					<dd></dd>
+					<dt><var>$w</var></dt>
+					<dd></dd>
+					<dt><var>$h</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					type
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeight" id="_getHeight">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeight">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#231-237" title="Go to source code">getHeight</a>( )</code>
+
+		<div class="description short">
+			<p>retorna o altura da imagem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>retorna o altura da imagem</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWidth" id="_getWidth">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWidth">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#239-245" title="Go to source code">getWidth</a>( )</code>
+
+		<div class="description short">
+			<p>retorna a largura da imagem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>retorna a largura da imagem</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getType" id="_getType">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getType">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperImage.html#247-253" title="Go to source code">getType</a>( )</code>
+
+		<div class="description short">
+			<p>retorna o tipo da imagem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>retorna o tipo da imagem</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="OPT_EMPTY" id="OPT_EMPTY">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-PowerCMS.Helper.PowerHelperImage.html#11" title="Go to source code"><b>OPT_EMPTY</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#OPT_EMPTY" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="OPT_FILL" id="OPT_FILL">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-PowerCMS.Helper.PowerHelperImage.html#12" title="Go to source code"><b>OPT_FILL</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#OPT_FILL" class="anchor">#</a>
+				<code><span class="php-quote">&quot;preenchimento&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="OPT_CROP" id="OPT_CROP">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-PowerCMS.Helper.PowerHelperImage.html#13" title="Go to source code"><b>OPT_CROP</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#OPT_CROP" class="anchor">#</a>
+				<code><span class="php-quote">&quot;crop&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

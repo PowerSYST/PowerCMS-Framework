@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PowerCMS\Helper\PowerHelperInput</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PowerCMS.html">
+						PowerCMS<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-PowerCMS.Helper.html">
+						Helper					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PowerCMS.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PowerCMS.Helper.PowerHelperApi.html">PowerHelperApi</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperApplication.html">PowerHelperApplication</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperConnectionDatabase.html">PowerHelperConnectionDatabase</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperDatabase.html">PowerHelperDatabase</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperDataType.html">PowerHelperDataType</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperFile.html">PowerHelperFile</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperImage.html">PowerHelperImage</a></li>
+				<li class="active"><a href="class-PowerCMS.Helper.PowerHelperInput.html">PowerHelperInput</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperMedia.html">PowerHelperMedia</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperModule.html">PowerHelperModule</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperModuleResult.html">PowerHelperModuleResult</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperPagination.html">PowerHelperPagination</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperPaginationPages.html">PowerHelperPaginationPages</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperResponse.html">PowerHelperResponse</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperTemplate.html">PowerHelperTemplate</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperView.html">PowerHelperView</a></li>
+				<li><a href="class-PowerCMS.Helper.PowerHelperViewTools.html">PowerHelperViewTools</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PowerCMS.Helper.html" title="Summary of PowerCMS\Helper"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PowerHelperInput</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PowerCMS.html">PowerCMS</a>\<a href="namespace-PowerCMS.Helper.html">Helper</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-PowerCMS.Helper.PowerHelperInput.html#5-108" title="Go to source code">PowerHelperInput.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="POST" id="_POST">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_POST">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperInput.html#7-29" title="Go to source code">POST</a>( <span>string|integer <var>$key</var></span>, <span>const <var>$type</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Retorna o valor contido na variável global $_POST</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna o valor contido na variável global $_POST</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$_POST</span>[<span class="php-quote">&quot;teste&quot;</span>] = <span class="php-num">10</span>;
+  <span class="php-var">$var</span>  = PowerHelperInput::POST(<span class="php-quote">&quot;teste&quot;</span>, PowerHelperDataType::TYPE_INTEGER);
+  <span class="php-keyword1">echo</span> <span class="php-quote">&quot; &quot;</span>;
+  <span class="php-var">$var2</span> = PowerHelperInput::POST(<span class="php-quote">&quot;teste2&quot;</span>, PowerHelperDataType::TYPE_INTEGER, <span class="php-num">30</span>);
+  <span class="php-keyword1">echo</span> <span class="php-quote">&quot; &quot;</span>;
+  <span class="php-var">$var3</span> = PowerHelperInput::POST(<span class="php-quote">&quot;teste3&quot;</span>, PowerHelperDataType::TYPE_INTEGER);
+
+ <span class="php-comment">##Retorno: 10 30</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+					<dt><var>$type</var></dt>
+					<dd>constante da classe PowerHelperDataType</dd>
+					<dt><var>$default</var></dt>
+					<dd>valor default, valor que deve ser retornado caso a variável for nula</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GET" id="_GET">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GET">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperInput.html#31-53" title="Go to source code">GET</a>( <span>string|integer <var>$key</var></span>, <span>const <var>$type</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Retorna o valor contido na variável global $_GET</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna o valor contido na variável global $_GET</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$_GET</span>[<span class="php-quote">&quot;teste&quot;</span>] = <span class="php-num">10</span>;
+  <span class="php-var">$var</span>  = PowerHelperInput::GET(<span class="php-quote">&quot;teste&quot;</span>, PowerHelperDataType::TYPE_INTEGER);
+  <span class="php-keyword1">echo</span> <span class="php-quote">&quot; &quot;</span>;
+  <span class="php-var">$var2</span> = PowerHelperInput::GET(<span class="php-quote">&quot;teste2&quot;</span>, PowerHelperDataType::TYPE_INTEGER, <span class="php-num">30</span>);
+  <span class="php-keyword1">echo</span> <span class="php-quote">&quot; &quot;</span>;
+  <span class="php-var">$var3</span> = PowerHelperInput::GET(<span class="php-quote">&quot;teste3&quot;</span>, PowerHelperDataType::TYPE_INTEGER);
+
+  <span class="php-comment">##Retorno: 10 30</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+					<dt><var>$type</var></dt>
+					<dd>constante da classe PowerHelperDataType</dd>
+					<dt><var>$default</var></dt>
+					<dd>valor default, valor que deve ser retornado caso a variável for nula</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="REQUEST" id="_REQUEST">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_REQUEST">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperInput.html#55-77" title="Go to source code">REQUEST</a>( <span>string|integer <var>$key</var></span>, <span>const <var>$type</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Retorna o valor contido na variável global $_REQUEST</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna o valor contido na variável global $_REQUEST</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$_REQUEST</span>[<span class="php-quote">&quot;teste&quot;</span>] = <span class="php-num">10</span>;
+  <span class="php-var">$var</span>  = PowerHelperInput::REQUEST(<span class="php-quote">&quot;teste&quot;</span>, PowerHelperDataType::TYPE_INTEGER);
+  <span class="php-keyword1">echo</span> <span class="php-quote">&quot; &quot;</span>;
+  <span class="php-var">$var2</span> = PowerHelperInput::REQUEST(<span class="php-quote">&quot;teste2&quot;</span>, PowerHelperDataType::TYPE_INTEGER, <span class="php-num">30</span>);
+  <span class="php-keyword1">echo</span> <span class="php-quote">&quot; &quot;</span>;
+  <span class="php-var">$var3</span> = PowerHelperInput::REQUEST(<span class="php-quote">&quot;teste3&quot;</span>, PowerHelperDataType::TYPE_INTEGER);
+
+  <span class="php-comment">##Retorno: 10 30</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+					<dt><var>$type</var></dt>
+					<dd>constante da classe PowerHelperDataType</dd>
+					<dt><var>$default</var></dt>
+					<dd>valor default, valor que deve ser retornado caso a variável for nula</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValueArray" id="_getValueArray">
+
+		<td class="attributes"><code>
+			 public static
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValueArray">#</a>
+		<code><a href="source-class-PowerCMS.Helper.PowerHelperInput.html#79-106" title="Go to source code">getValueArray</a>( <span> <var>$array</var></span>, <span>const <var>$key</var></span>, <span>mixed <var>$type</var></span>, <span> <var>$default</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			<p>Retorna o valor contido na variável $array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retorna o valor contido na variável $array</p>
+
+<h1>Ex:</h1>
+
+<pre><span class="php-var">$array</span> = <span class="php-keyword1">array</span>(
+      <span class="php-quote">&quot;teste&quot;</span> =&gt; <span class="php-num">10</span>
+  );
+  <span class="php-var">$var</span>  = PowerHelperInput::getValueArray(<span class="php-var">$array</span>, <span class="php-quote">&quot;teste&quot;</span>, PowerHelperDataType::TYPE_INTEGER);
+  <span class="php-keyword1">echo</span> <span class="php-quote">&quot; &quot;</span>;
+  <span class="php-var">$var2</span> = PowerHelperInput::getValueArray(<span class="php-var">$array</span>, <span class="php-quote">&quot;teste2&quot;</span>, PowerHelperDataType::TYPE_INTEGER, <span class="php-num">30</span>);
+  <span class="php-keyword1">echo</span> <span class="php-quote">&quot; &quot;</span>;
+  <span class="php-var">$var3</span> = PowerHelperInput::getValueArray(<span class="php-var">$array</span>, <span class="php-quote">&quot;teste3&quot;</span>, PowerHelperDataType::TYPE_INTEGER);
+
+  <span class="php-comment">##Retorno: 10 30</span></pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$array</var></dt>
+					<dd>para buscar o valor solicitado</dd>
+					<dt><var>$key</var></dt>
+					<dd>$type constante da classe PowerHelperDataType</dd>
+					<dt><var>$type</var></dt>
+					<dd>$default valor default, valor que deve ser retornado caso a variável for nula</dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
