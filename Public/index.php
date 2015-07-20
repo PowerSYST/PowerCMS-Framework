@@ -8,7 +8,7 @@
            
     try {     
         $app = new PowerHelperApplication(); 
-        $app->run(POWERCMS_MODULE);      
+        $app->run(POWERCMS_MODULE);     
     } catch (PowerExceptionFatalError $ex) {        
         echo $ex->getMessage();
     } catch (PowerExceptionNotFound $ex) {
