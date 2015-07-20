@@ -8,4 +8,4 @@
 Acesse a documentação do PowerCMS e saiba passo a passo como instalar, configura
 e criar módulos. 
 
-http://powercms.com.br/docs/
+[Veja a Documentação](http://powercms.com.br/docs/document/2/19/07/2015/obtendo-e-configurando-a-framework-powercms.html#boxDocumentation)
