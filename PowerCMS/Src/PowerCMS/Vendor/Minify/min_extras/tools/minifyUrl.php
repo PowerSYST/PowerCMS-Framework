@@ -7,9 +7,7 @@ function getPost($key) {
     if (! isset($_POST[$key])) {
         return null;
     }
-    return get_magic_quotes_gpc()
-        ? stripslashes($_POST[$key])
-        : $_POST[$key];
+    return $_POST[$key];
 }
 
 function sniffType($headers) {
@@ -126,9 +124,7 @@ if (isset($_POST['url'])) {
 
 header('Content-Type: text/html; charset=utf-8');
 
-$ua = get_magic_quotes_gpc()
-    ? stripslashes($_SERVER['HTTP_USER_AGENT']) 
-    : $_SERVER['HTTP_USER_AGENT'];
+$ua = $_SERVER['HTTP_USER_AGENT'];
 
 ?>
 <!DOCTYPE html><head><title>Minify URL</title></head>

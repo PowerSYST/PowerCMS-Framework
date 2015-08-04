@@ -1,9 +1,7 @@
 <?php
 
 function getPost($key) {
-    return get_magic_quotes_gpc()
-        ? stripslashes($_POST[$key])
-        : $_POST[$key];
+    return isset($_POST[$key]) ? $_POST[$key] : NULL;
 }
 
 if (isset($_POST['textIn'])) {

@@ -17,9 +17,6 @@ if (! empty($_POST)) {
             unset($_POST[$name]);
             continue;
         }
-        if (get_magic_quotes_gpc()) {
-            $_POST[$name] = stripslashes($val);
-        }
     }
 }
 
