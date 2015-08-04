@@ -7,6 +7,17 @@
         throw new Exception('The PowerCMS Freamwork requires PHP version 5.0 or higher.');
     }
     
+    if (!interface_exists('JsonSerializable')) {
+        interface JsonSerializable {
+                function jsonSerialize();
+        }
+    }
+    
+    /*** Constantes Padrões ***/ 
+    if(!defined("JSON_PRETTY_PRINT")) { 
+        define("JSON_PRETTY_PRINT", 128);
+    }
+    
     //Define Constants Default 
     define("POWERCMS_EXTENSION_PHP",        ".php");
     define("POWERCMS_EXTENSION_CLASS_PHP",  ".class.php");
@@ -81,9 +92,3 @@
             require_once($pathname);
         }
     });
-    
-    if (!interface_exists('JsonSerializable')) {
-        interface JsonSerializable {
-                function jsonSerialize();
-        }
-    }

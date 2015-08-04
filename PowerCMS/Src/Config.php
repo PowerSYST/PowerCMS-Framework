@@ -25,7 +25,7 @@
     
     /*** Compressores ***/
     define("POWERCMS_MINIFY_PATH",          POWERCMS_PATH_PUBLIC . "powercms-min/");
-    
+        
     /*** Configurações com arquivo externo ***/
     $file_json = POWERCMS_FILE_CONFIG;
     if(file_exists($file_json)) { 
