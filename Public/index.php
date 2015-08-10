@@ -1,13 +1,10 @@
 <?php
     
-    include(dirname(dirname(__FILE__)) . "/PowerCMS/autoload.php");
+    include(dirname(dirname(__FILE__)) . "/App/Src/Vendor/PowerCMS/autoload.php");
         
     use PowerCMS\Exception\PowerExceptionFatalError;
     use PowerCMS\Exception\PowerExceptionNotFound; 
     use PowerCMS\Helper\PowerHelperApplication;   
-    use PowerCMS\Helper\PowerHelperApi;
-    
-    PowerHelperApi::setUrlModule("http://api.powercms.dev/");
            
     try {     
         $app = new PowerHelperApplication(); 

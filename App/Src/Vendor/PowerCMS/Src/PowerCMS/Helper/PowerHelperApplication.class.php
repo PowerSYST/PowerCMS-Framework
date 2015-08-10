@@ -48,6 +48,8 @@
          * @var String modulo 
          */
         private static $_module; 
+        
+        private $_developer;         
         private $_routes;
         
         /**
@@ -117,6 +119,12 @@
             return 1;
         }
         
+        /**
+         * Verifica se é requisições da api
+         * 
+         * @param String $route 
+         * @return boolean
+         */
         private function isApi($route) { 
             $explode = explode("/", $route);
             if(count($explode) > 1 && strtolower($explode[0]) == "powercms") { 
@@ -125,6 +133,12 @@
             return false; 
         }
         
+        /**
+         * Verifica se é requisições para compressão de arquivos
+         * 
+         * @param String $route 
+         * @return boolean
+         */
         private function isMinify($file) { 
             if(!is_file($file)) { 
                 $extension = explode(",", str_replace(" ", "", strtolower(POWERCMS_MINIFY_PERMITTED)));
@@ -136,6 +150,12 @@
             return false; 
         }
         
+        /**
+         * Verifica se é requisições para redimisionar imagens
+         * 
+         * @param String $route 
+         * @return boolean
+         */
         private function isImage($file) { 
             if(is_file($file)) { 
                 $extension = explode(",", str_replace(" ", "", strtolower(POWERCMS_IMAGE_REZINE_PERMITTED)));
@@ -229,6 +249,15 @@
         private function getNamespaceControllerSetupPowerCMS() 
         { 
             return self::NAMESPACE_CONTROLLER_POWERCMS_SETUP;
+        }
+        
+        /**
+         *  Seta o ambiente para desenvolvedores internos PowerCMS
+         *  @return Void
+         */
+        public function changeDeveloper() { 
+            PowerHelperApi::setUrlModule("http://api.powercms.dev/");
+            $this->_developer = true;
         }
         
     }

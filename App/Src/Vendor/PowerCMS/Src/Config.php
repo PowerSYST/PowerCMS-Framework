@@ -18,18 +18,18 @@
     define("POWERCMS_MINIFY_PERMITTED", "css, js");
     
     /*** Pastas Padrão ***/
-    define("POWERCMS_PATH_ROOT",            dirname(dirname(dirname(__FILE__))));
-    define("POWERCMS_PATH_TEMP",            POWERCMS_PATH_ROOT      . DIRECTORY_SEPARATOR . "Tmp" . DIRECTORY_SEPARATOR);
-    define("POWERCMS_PATH_POWERCMS",        (POWERCMS_PATH_ROOT     . DIRECTORY_SEPARATOR . "PowerCMS" . DIRECTORY_SEPARATOR . "Src" . DIRECTORY_SEPARATOR));
+    define("POWERCMS_PATH_ROOT",            $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR);
+    define("POWERCMS_PATH_POWERCMS",        dirname(__FILE__));
     define("POWERCMS_PATH_POWERCMS_MODULES",(POWERCMS_PATH_POWERCMS . DIRECTORY_SEPARATOR . "Modules" . DIRECTORY_SEPARATOR));
     define("POWERCMS_PATH_APP",             (POWERCMS_PATH_ROOT     . DIRECTORY_SEPARATOR . "App" . DIRECTORY_SEPARATOR . "Src" . DIRECTORY_SEPARATOR));
-    define("POWERCMS_PATH_LIBS",            (POWERCMS_PATH_APP      . DIRECTORY_SEPARATOR . "Libs" . DIRECTORY_SEPARATOR));
+    define("POWERCMS_PATH_LIBS",            (POWERCMS_PATH_APP      . DIRECTORY_SEPARATOR . "Vendor" . DIRECTORY_SEPARATOR));
+    define("POWERCMS_FILE_CONFIG",          (dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . "config.json"));   
+    
+    define("POWERCMS_PATH_TEMP",            POWERCMS_PATH_ROOT      . DIRECTORY_SEPARATOR . "Tmp" . DIRECTORY_SEPARATOR);
     define("POWERCMS_PATH_CACHE",           (POWERCMS_PATH_TEMP     . DIRECTORY_SEPARATOR . "Cache" . DIRECTORY_SEPARATOR));
     define("POWERCMS_PATH_VIEW",            (POWERCMS_PATH_ROOT     . DIRECTORY_SEPARATOR . "App" . DIRECTORY_SEPARATOR . "Src" . DIRECTORY_SEPARATOR . "View" . DIRECTORY_SEPARATOR));
     define("POWERCMS_PATH_PUBLIC",          (POWERCMS_PATH_ROOT     . DIRECTORY_SEPARATOR . "Public" . DIRECTORY_SEPARATOR));
-    define("POWERCMS_FILE_CONFIG",          (dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . "config.json"));   
     
-    /*** Compressores ***/
     define("POWERCMS_MINIFY_PATH",          POWERCMS_PATH_PUBLIC . "powercms-min/");
         
     /*** Configurações com arquivo externo ***/
