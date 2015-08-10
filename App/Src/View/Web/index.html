@@ -5,7 +5,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div>Página Exemplo</div>
+    <body>        
+        <!--- 
+            Exemplo 1, variáveis 
+        //--> 
+        <div>
+            {POWERCMS_EXAMPLE_VAR_1}
+        </div>
+        
+        <!--- 
+            Exemplo 2, preenchimento de blocos 
+        //--> 
+        <ul>
+            <!-- BEGIN BLOCK_EXAMPLE --> 
+            <li><b>{EXAMPLE_NAME}</b>: {EXAMPLE_VALUE}</li>
+            <!-- END BLOCK_EXAMPLE --> 
+        </ul>
+        
+        <!--- 
+            Exemplo 3, blocos
+        //--> 
+        <!-- BEGIN EXAMPLE_BLOCK_HIDDEN --> 
+        <div>Don't show</div>
+        <!-- END EXAMPLE_BLOCK_HIDDEN -->         
     </body>
 </html>

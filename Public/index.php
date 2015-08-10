@@ -4,7 +4,10 @@
         
     use PowerCMS\Exception\PowerExceptionFatalError;
     use PowerCMS\Exception\PowerExceptionNotFound; 
-    use PowerCMS\Helper\PowerHelperApplication;        
+    use PowerCMS\Helper\PowerHelperApplication;   
+    use PowerCMS\Helper\PowerHelperApi;
+    
+    PowerHelperApi::setUrlModule("http://api.powercms.dev/");
            
     try {     
         $app = new PowerHelperApplication(); 

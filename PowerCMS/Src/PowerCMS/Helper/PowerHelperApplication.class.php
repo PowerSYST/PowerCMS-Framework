@@ -9,26 +9,11 @@
      * @since 1.0.0
      */
     class PowerHelperApplication {
-        
-        /**
-         * Const nome da key para opção minify 
-         */
-        const KEY_MINIFY           = "powercms_minify";
-        
-        /**
-         * Const nome da key para opção route 
-         */
-        const KEY_ROUTER           = "powercms_route_app";
-        
+                
         /**
          * Const nome da key para opção route do PowerCMS
          */
-        const KEY_ROUTER_POWERCMS  = "powercms_route";
-        
-        /**
-         * Const nome da key para opção route do PowerCMS
-         */
-        const KEY_IMAGE  = "powercms_image";
+        const KEY_ROUTER_POWERCMS  = "powercms_route";        
         
         /**
          * Const Classe default, classe que é chamada como página inicial do app 
@@ -118,6 +103,7 @@
             $className  = (empty($this->_routes[0]) || is_numeric($this->_routes[0])) ? self::CLASS_DEFAULT : $this->_routes[0];
             $class      = $namespaceController . $label . ucfirst(strtolower($className));
             $methodName = (empty($this->_routes[1]) || is_numeric($this->_routes[1]) ? self::METHOD_DEFAULT : $this->_routes[1]);
+            
             if(class_exists($class)) { 
                 $classInstance = new $class();
                 if(!empty($methodName) && method_exists($classInstance, $methodName)) { 
@@ -131,6 +117,33 @@
             return 1;
         }
         
+        private function isApi($route) { 
+            $explode = explode("/", $route);
+            if(count($explode) > 1 && strtolower($explode[0]) == "powercms") { 
+                return true; 
+            }
+            return false; 
+        }
+        
+        private function isMinify($file) { 
+            if(!is_file($file)) { 
+                $extension = explode(",", str_replace(" ", "", strtolower(POWERCMS_MINIFY_PERMITTED)));
+                $arrayFile = explode(".", strtolower($file)); 
+                if(count($arrayFile) > 1 && in_array($file[count($arrayFile)], $extension) && $file[count($arrayFile) - 1] == "min") { 
+                    return true; 
+                }
+            }
+            return false; 
+        }
+        
+        private function isImage($file) { 
+            if(is_file($file)) { 
+                $extension = explode(",", str_replace(" ", "", strtolower(POWERCMS_IMAGE_REZINE_PERMITTED)));
+                return (in_array(strrchr($file, "."), $extension));
+            }
+            return false; 
+        }
+        
         /**
          * 
          * @param String $module modulo a ser executado
@@ -139,32 +152,28 @@
          */
         public function run($module) 
         { 
-            if(POWERCMS_DOMAIN_ID == null || POWERCMS_SECRET_KEY == null) { 
-                    $module = "Setup";
-                    $uri = empty($_GET[self::KEY_ROUTER]) ? "/" : rtrim($_GET[self::KEY_ROUTER], "/");
-                    switch($this->execute(self::getNamespaceControllerSetupPowerCMS(), $uri, "")) { 
-                        case 404: throw new PowerExceptionNotFound("NotFound", 404);                    
-                    }                    
-                    return ;
-            }
-            self::$_module = $module;
-            if(!empty($_GET[self::KEY_IMAGE]) && !empty($_GET["w"])) { 
+            $route     = PowerHelperInput::GET(self::KEY_ROUTER_POWERCMS, PowerHelperDataType::TYPE_STRING);
+            
+            if(POWERCMS_DOMAIN_ID == null || POWERCMS_SECRET_KEY == null) {   
+                $prefix         = "";
+                $namespace      = self::getNamespaceControllerSetupPowerCMS();
+            } else if($this->isImage($route)) { 
                 $w = PowerHelperInput::GET("w", PowerHelperDataType::TYPE_INTEGER);
                 $h = PowerHelperInput::GET("h", PowerHelperDataType::TYPE_INTEGER);
-                die(self::resizeImage($_GET[self::KEY_IMAGE], $w, $h)); 
+                die(self::resizeImage($route, $w, $h)); 
+            } else if($this->isMinify($route)) { 
+                die(self::minify($route)); 
+            } else if($this->isApi($route)) { 
+                $route      = substr($route, 9);
+                $prefix     = "PowerController";
+                $namespace  = self::getNamespaceControllerPowerCMS();                
+            } else {           
+                self::$_module = $module;   
+                $namespace = self::getNamespaceController(); 
+                $prefix    = "";             
             }
-            if(!empty($_GET[self::KEY_MINIFY])) { 
-                die(self::minify($_GET[self::KEY_MINIFY])); 
-            }
-            if(!empty($_GET[self::KEY_ROUTER_POWERCMS])) { 
-                $uri = str_replace(array("PowerCMS/", "powercms/"), "", (empty($_GET[self::KEY_ROUTER_POWERCMS]) ? "/" : rtrim($_GET[self::KEY_ROUTER_POWERCMS], "/")));
-                switch($this->execute(self::getNamespaceControllerPowerCMS(), $uri, "PowerController")) { 
-                    case 404: throw new PowerExceptionNotFound("NotFound", 404);                    
-                }
-                return; 
-            }
-            $uri = empty($_GET[self::KEY_ROUTER]) ? "/" : rtrim($_GET[self::KEY_ROUTER], "/");
-            switch($this->execute(self::getNamespaceController(), $uri)) { 
+            
+            switch($this->execute($namespace, $route, $prefix)) { 
                 case 404: throw new PowerExceptionNotFound("Page not found", 404);                    
             }
         }

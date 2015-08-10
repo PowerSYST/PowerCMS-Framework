@@ -1,3 +1,5 @@
+Options -Indexes
+
 RewriteEngine On
 
 RewriteRule ^(.*)$              ./Public/$1?%{QUERY_STRING} [QSA,L]

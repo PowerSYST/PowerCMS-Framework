@@ -19,6 +19,9 @@
         {
             self::setPathView();
             $view = new PowerHelperView("setup");
+            $view->addVarListTemplate(array(
+                "POWERCMS_HOST" => (isset($_SERVER["HTTP_HOST"]) ? $_SERVER["HTTP_HOST"] : "")
+            ));
             $view->showView();
         }
         

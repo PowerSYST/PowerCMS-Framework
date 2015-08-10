@@ -9,7 +9,7 @@
     
     if (!interface_exists('JsonSerializable')) {
         interface JsonSerializable {
-                function jsonSerialize();
+            function jsonSerialize();
         }
     }
     
@@ -28,6 +28,7 @@
     if(!isset($_SESSION)) { 
         @session_start();    
     }  
+    
     //Set Error Report 
     error_reporting(E_ALL|E_STRICT);    
     //Set Default Timezone

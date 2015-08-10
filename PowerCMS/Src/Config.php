@@ -11,6 +11,12 @@
     define("POWERCMS_DEBUG",                1);
     define("POWERCMS_DISPLAY_ERROS_FATAL",  1);
     
+    /*** Resize Image ***/ 
+    define("POWERCMS_IMAGE_REZINE_PERMITTED", "jpg, bmp, png, jpeg, gif");
+    
+    /*** Minify File ***/ 
+    define("POWERCMS_MINIFY_PERMITTED", "css, js");
+    
     /*** Pastas Padrão ***/
     define("POWERCMS_PATH_ROOT",            dirname(dirname(dirname(__FILE__))));
     define("POWERCMS_PATH_TEMP",            POWERCMS_PATH_ROOT      . DIRECTORY_SEPARATOR . "Tmp" . DIRECTORY_SEPARATOR);
