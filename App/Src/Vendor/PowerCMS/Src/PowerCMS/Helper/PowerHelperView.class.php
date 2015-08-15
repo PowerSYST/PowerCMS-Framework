@@ -162,7 +162,7 @@
          * @return void
          */
         public function addSourceFile($var, $view) { 
-            $file = self::getPathView() . "Web" . DIRECTORY_SEPARATOR . $view . POWERCMS_EXTENSION_VIEW;
+            $file = self::getPathView() . PowerHelperApplication::getCurrentModule() . DIRECTORY_SEPARATOR . $view . POWERCMS_EXTENSION_VIEW;
             if(is_file($file)) { 
                 $this->getTemplate()->addFile("SOURCE_INCLUDE_" . $var, $file);
             } 
