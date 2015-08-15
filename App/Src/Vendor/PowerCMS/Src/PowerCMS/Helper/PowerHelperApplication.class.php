@@ -143,7 +143,7 @@
             if(!is_file($file)) { 
                 $extension = explode(",", str_replace(" ", "", strtolower(POWERCMS_MINIFY_PERMITTED)));
                 $arrayFile = explode(".", strtolower($file)); 
-                if(count($arrayFile) > 1 && in_array($file[count($arrayFile)], $extension) && $file[count($arrayFile) - 1] == "min") { 
+                if(count($arrayFile) > 1 && in_array($arrayFile[(count($arrayFile) - 1)], $extension) && $arrayFile[(count($arrayFile) - 2)] == "min") { 
                     return true; 
                 }
             }
@@ -153,13 +153,13 @@
         /**
          * Verifica se é requisições para redimisionar imagens
          * 
-         * @param String $route 
+         * @param String $file 
          * @return boolean
          */
         private function isImage($file) { 
             if(is_file($file)) { 
                 $extension = explode(",", str_replace(" ", "", strtolower(POWERCMS_IMAGE_REZINE_PERMITTED)));
-                return (in_array(strrchr($file, "."), $extension));
+                return (in_array(substr(strrchr($file, "."), 1), $extension));
             }
             return false; 
         }
@@ -173,7 +173,6 @@
         public function run($module) 
         { 
             $route     = PowerHelperInput::GET(self::KEY_ROUTER_POWERCMS, PowerHelperDataType::TYPE_STRING);
-            
             if(POWERCMS_DOMAIN_ID == null || POWERCMS_SECRET_KEY == null) {   
                 $prefix         = "";
                 $namespace      = self::getNamespaceControllerSetupPowerCMS();
